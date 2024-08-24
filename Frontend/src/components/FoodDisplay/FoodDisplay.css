@@ -1,0 +1,28 @@
+.food-display{
+    margin-top: 30px;
+    width: 77%;
+    margin: auto;
+}
+
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+
+.food-display-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap:15px;
+    row-gap: 40px;
+    /* border: 2px solid black; */
+}
+
+@media (max-width:750px){
+    .food-display-list{
+        flex-direction: column;
+    }
+}
