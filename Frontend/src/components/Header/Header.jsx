@@ -3,9 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import './Header.css'
 function Header() {
   const navigate = useNavigate();
-  const goToViewMenu = () => {
-    navigate(explore-menu);
-};
   return (
     <div className='header'>
       <div className="header-contents">
