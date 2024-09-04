@@ -14,7 +14,11 @@ const port = process.env.PORT || 8000;
 
 //middleware
 app.use(express.json()) //whenerver we get req from frontend to backend it will parse to json
-app.use(cors())
+app.use(cors({
+    origin: 'https://food-del-tomato-xkby.vercel.app', // Replace with your frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 
 //db
