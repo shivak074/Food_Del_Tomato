@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from "react";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-    const url = "https://food-delivery-backend-7sb4.onrender.com";
+    const url = "https://food-del-tomato.onrender.com";
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState(localStorage.getItem("accessToken") || "");
     const [refreshToken, setRefreshToken] = useState(localStorage.getItem("refreshToken") || "");
