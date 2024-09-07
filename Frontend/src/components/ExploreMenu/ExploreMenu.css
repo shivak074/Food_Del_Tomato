@@ -56,9 +56,8 @@
 }
 
 @media (max-width : 1050px) {
-    .explore-menu-text{
-        display: block;
-        width: 100%;
-        font-size: 14px;
-    }
+   .explore-menu-text{
+    max-width: 60%;
+    columns: #808080;
+}
 }
